@@ -28,3 +28,9 @@ def getPokemon(request):
     pokemon = Pokemon.objects.all()
     serializer = PokemonSerializer(pokemon, many=True)
     return Response(serializer.data)
+
+@api_view(['GET'])
+def getSingPokemon(request, pk):
+    pokemon = Pokemon.objects.get(id=pk)
+    serializer = PokemonSerializer(pokemon, many=False)
+    return Response(serializer.data)
