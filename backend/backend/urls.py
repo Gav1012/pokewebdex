@@ -19,5 +19,5 @@ from django.urls import path, include
 # patterns that go into the api folder
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('api.urls')),
+    path('api/', include('api.urls')),
 ]
