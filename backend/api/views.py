@@ -1,8 +1,11 @@
 from django.shortcuts import render
-from django.http import JsonResponse
+from rest_framework.response import Response
+from rest_framework.decorators import api_view
+from .models import Pokemon
+from .serializers import PokemonSerializer
 
-# Create your views here.
-
+# 
+@api_view(['GET'])
 def getRoutes(request):
     routes = [
         {
@@ -18,4 +21,10 @@ def getRoutes(request):
             'description': 'Returns a single Pokemon'
         }
     ]
-    return JsonResponse(routes, safe=False)
+    return Response(routes)
+
+@api_view(['GET'])
+def getPokemon(request):
+    pokemon = Pokemon.objects.all()
+    serializer = PokemonSerializer(pokemon, many=True)
+    return Response(serializer.data)
