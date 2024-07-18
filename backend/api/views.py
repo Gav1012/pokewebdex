@@ -4,4 +4,18 @@ from django.http import JsonResponse
 # Create your views here.
 
 def getRoutes(request):
-    return JsonResponse('Our API', safe=False)
+    routes = [
+        {
+            'Endpoint': '/Pokemon/',
+            'method': 'GET',
+            'body': None,
+            'description': 'Returns all Pokemon'
+        },
+        {
+            'Endpoint': '/Pokemon/id',
+            'method': 'GET',
+            'body': None,
+            'description': 'Returns a single Pokemon'
+        }
+    ]
+    return JsonResponse(routes, safe=False)
