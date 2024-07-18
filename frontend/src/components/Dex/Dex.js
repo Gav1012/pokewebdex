@@ -8,7 +8,7 @@ export default function Dex() {
     }, [])
 
     const getPokemon = async () => {
-        let response = await fetch('http://127.0.0.1:8000/api/pokemon/');
+        let response = await fetch('/api/pokemon/');
         let data = await response.json();
         console.log(data);
         setPokemon(data);
@@ -16,7 +16,11 @@ export default function Dex() {
 
     return (
         <div className="Dex">
-            This is where dex info about Pokemon will be displayed
+            <div className="pokemon-list">
+                {pokemon.map((pokemon, index) => (
+                    <p key={index}>{pokemon.body}</p>  
+                ))}
+            </div>
         </div>
     );
 }
