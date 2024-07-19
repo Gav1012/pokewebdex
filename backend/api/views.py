@@ -15,7 +15,7 @@ def getRoutes(request):
             'description': 'Returns all Pokemon'
         },
         {
-            'Endpoint': '/Pokemon/id',
+            'Endpoint': '/Pokemon/name',
             'method': 'GET',
             'body': None,
             'description': 'Returns a single Pokemon'
@@ -31,6 +31,6 @@ def getPokemon(request):
 
 @api_view(['GET'])
 def getSingPokemon(request, pk):
-    pokemon = Pokemon.objects.get(id=pk)
+    pokemon = Pokemon.objects.get(name=pk)
     serializer = PokemonSerializer(pokemon, many=False)
     return Response(serializer.data)
