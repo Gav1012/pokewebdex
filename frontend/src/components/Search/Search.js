@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import "./Search.css";
 
 export default function Search({ pokemon, setPokemon }) {
     // holds the search values
@@ -43,23 +44,8 @@ export default function Search({ pokemon, setPokemon }) {
     const handleSearch = () => {
         setInvokeSearch(true);
     }
-
-    // // fetches pokemon from the django database
-    // const getPokemon = async () => {
-    //     let response = await fetch('/api/pokemon/');
-    //     let data = await response.json();
-    //     console.log(data);
-    //     setPokemon(data);
-    // }
-
-    // const getSingPokemon = async (name) => {
-    //     let response = await fetch(`/api/pokemon/${name}/`);
-    //     let data = await response.json();
-    //     console.log(data);
-    //     setPokemon(data ? [data]: []);
-    // }
     return (
-        <div className="Search">
+        <div className="search">
             <input
                 className="search-bar"
                 size="50"
@@ -67,7 +53,7 @@ export default function Search({ pokemon, setPokemon }) {
                 placeholder="Enter Pokemon Name"
                 onChange={handleChange}
             />
-            <button onClick={handleSearch}>Search</button>
+            <button className="search-button" onClick={handleSearch}>Search</button>
         </div>
     );
 }

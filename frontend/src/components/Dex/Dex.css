@@ -1,0 +1,19 @@
+.pokemon-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-left: 25px;
+    padding-right: 25px;
+    gap: 20px;
+}
+
+.single-pokemon {
+    background-color: darkred;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.image {
+    display:flex;
+    padding-left: 42%;
+    height: 100px;
+}
