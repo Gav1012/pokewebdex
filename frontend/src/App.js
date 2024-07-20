@@ -9,7 +9,7 @@ export default function App() {
   
   return (
     <div className="App">
-      <h1>Welcome to PokeWebDex</h1>
+      <h1 className="title">Welcome to PokeWebDex</h1>
       <Search pokemon={pokemon} setPokemon={setPokemon}/>
       <Dex pokemon={pokemon} setPokemon={setPokemon}/>
     </div>
