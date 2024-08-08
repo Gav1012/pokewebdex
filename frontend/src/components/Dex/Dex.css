@@ -10,6 +10,11 @@
     background-color: darkred;
     padding: 10px;
     font-weight: bold;
+    transition: transform 0.3s ease;
+}
+
+.single-pokemon:hover {
+    transform: scale(1.2);
 }
 
 .image {
