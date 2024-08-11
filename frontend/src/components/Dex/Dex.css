@@ -14,7 +14,19 @@
 }
 
 .single-pokemon:hover {
-    transform: scale(1.2);
+    transform: scale(1.05);
+}
+
+.grass {
+    background-color: lightgreen;
+}
+
+.fire {
+    background-color: orange;
+}
+
+.water {
+    background-color: lightblue;
 }
 
 .image {
