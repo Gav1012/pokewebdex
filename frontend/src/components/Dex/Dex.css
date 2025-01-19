@@ -7,7 +7,7 @@
 }
 
 .single-pokemon {
-    background-color: cornsilk;
+    background-color: red;
     padding: 10px;
     font-weight: bold;
     transition: transform 0.3s ease;
