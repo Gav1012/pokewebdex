@@ -17,16 +17,16 @@
     transform: scale(1.05);
 }
 
-.grass {
-    background-color: lightgreen;
+.type-grass {
+    background-color: green;
 }
 
-.fire {
+.type-fire {
     background-color: orange;
 }
 
-.water {
-    background-color: lightblue;
+.type-water {
+    background-color: blue;
 }
 
 .image {
