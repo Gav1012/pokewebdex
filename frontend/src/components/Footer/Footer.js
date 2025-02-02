@@ -4,7 +4,8 @@ import "./Footer.css";
 export default function Footer() {
     return (
         <div className="footer">
-            This is where the footer stuff will go
+            <p>Created by Gavin Poley 2023</p>
+            <p>Developed used JavaScript, React, and Django</p>
         </div>
     )
 }
