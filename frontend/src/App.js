@@ -6,6 +6,8 @@ import Search from './components/Search/Search';
 import Footer from './components/Footer/Footer';
 
 export default function App() {
+  // this state is used to keep Pokemon list for when using the
+  // search bar
   const [pokemon, setPokemon] = useState([]);
   
   return (

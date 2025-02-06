@@ -1,6 +1,7 @@
 import React from 'react';
 import "./Footer.css";
 
+// displays information in the footer section of website
 export default function Footer() {
     return (
         <div className="footer">

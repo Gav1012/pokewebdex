@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import "./Search.css";
 
+// handles the search bar functionality, including finding the Pokemon based
+// on Name, Type (Future), and Number (Future)
 export default function Search({ pokemon, setPokemon }) {
     // holds the search values
     const [search, setSearch] = useState('');
