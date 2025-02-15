@@ -25,7 +25,6 @@ export default function Search({ pokemon, setPokemon }) {
             console.error('Error: ', error);
             setPokemon([]);
         };
-    
     }
     // grabs all the Pokemon at the start (will update this later, temp fix)
     useEffect(() => {
