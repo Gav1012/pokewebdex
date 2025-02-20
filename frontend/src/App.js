@@ -1,13 +1,11 @@
 import React, { useState }  from 'react';
-import logo from './logo.svg';
-import './App.css';
 import Dex from './components/Dex/Dex';
 import Search from './components/Search/Search';
 import Footer from './components/Footer/Footer';
+import './App.css';
 
 export default function App() {
   // this state is used to keep Pokemon list for when using the
-  // search bar
   const [pokemon, setPokemon] = useState([]);
   
   return (
